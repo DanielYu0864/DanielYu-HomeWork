@@ -7,39 +7,41 @@
 body {
     background-color: #d9dcd6;
 }
-
-.header {
+/*.hearder*/
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
+    header h1 {
+        display: inline-block;
+        font-size: 48px;
+    }
 
-.header h1 .seo {
-    color: #d9dcd6;
-}
+    header h1 .seo {
+        color: #d9dcd6;
+    }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
+    header div {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /*font-size -2px can fit in screen when the web page tighter*/
+        /*font-size:20px;*/
+        font-size: 18px;
+    }
 
-.header div ul {
-    list-style-type: none;
-}
+    header div ul {
+        list-style-type: none;
+    }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
+    header div ul li {
+        display: inline-block;
+        margin-left: 25px;
+    }
 
 a {
     color: #ffffff;
@@ -49,15 +51,24 @@ a {
 p {
     font-size: 16px;
 }
-
-.hero {
-    height: 800px;
+/*.hero*/
+nav {
+    /*height: 800px;*/
+    height: 100%;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 25px;    
+    /*remove background stuff*/
+    /*background-image: url("../images/digital-marketing-meeting.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
     
+}
+/*Added the nav img and made it fit the screen*/
+nav img {            
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-width: 0.1px;
 }
 
 .float-left {
@@ -70,69 +81,11 @@ p {
     margin-left: 25px;
 }
 
-.content {
+/*reorganized the article and grouped*/
+article {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 #search-engine-optimization {
@@ -144,7 +97,16 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
+    #search-engine-optimization img {
+        max-height: 200px;
+    }
+
+    #search-engine-optimization h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+#online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -153,7 +115,16 @@ p {
     color: #ffffff;
 }
 
-.social-media-marketing {
+    #online-reputation-management img {
+        max-height: 200px;
+    }
+
+    #online-reputation-management h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+#social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -162,40 +133,89 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
-    max-height: 200px;
+    #social-media-marketing img {
+        max-height: 200px;
+    }
+
+    #social-media-marketing h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+/*.benefit*/
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
+/*grouped all class=Lead-Generation*/
+/*.benefit-lead*/
+.Lead-Generation {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.social-media-marketing img {
-    max-height: 200px;
+    .Lead-Generation h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .Lead-Generation img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
+
+/*grouped all class=Brand-Awareness*/
+/*.benefit-brand*/
+.Brand-Awareness {    
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    .Brand-Awareness h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .Brand-Awareness img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
+
+/*grouped all Class=Cost-Management*/
+/*.benefit-cost*/
+.Cost-Management {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    .Cost-Management h3 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+    .Cost-Management img {
+        display: block;
+        margin: 10px auto;
+        max-width: 150px;
+    }
 
-.footer {
+/*.footer*/
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+    footer h4 {
     font-size: 20px;
-}
+    }

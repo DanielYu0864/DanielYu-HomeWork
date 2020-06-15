@@ -1,3 +1,22 @@
+
+##### What I did #####
+
+HTML
+1.  change the tittle 
+2.  fix the image and link
+5.  add alt
+3.  deleted the extra code   
+4.  reoganized the code structure         
+5.  rename the confusing code
+
+CSS
+1.  reoganized the code structure, and grouped the same tag 
+2.  move the background-imamge to HTML
+3.  adjust the <a> tag to make them can fit in the screen
+
+
+homework require
+
 # 01 HTML CSS Git: Code Refactor
 
 One of the most common tasks for front-end and junior developers is to take existing code and refactor it to either meet a certain set of standards or implement a new technology. Web accessibility is an increasingly important consideration for businesses, ensuring that people with disabilities or socio-economic restrictions have access to their website, and helping them avoid litigation.
@@ -20,15 +39,15 @@ SO THAT our own site is optimized for search engines
 
 ```
 GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
+/WHEN I view the source code
+THEN I findHTML elements
+/WHEN I view the structure of the HTML elements
 THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
+/WHEN I view the image elements
 THEN I find accessible alt attributes
-WHEN I view the heading attributes
+/WHEN I view the heading attributes
 THEN they fall in sequential order
-WHEN I view the title element
+/WHEN I view the title element
 THEN I find a concise, descriptive title
 ```
 
